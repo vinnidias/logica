@@ -1,9 +1,9 @@
 var user = require("readline-sync")
 var numbase = user.questionInt("insira um numero base: ")
 var numpotencia = user.questionInt("insira um numero para potencia: ")
-var num = 0
-while(numpotencia>=2){
-    numbase=numbase*numbase
+var produto = 1
+while(numpotencia>=1){
+    produto=produto*numbase
     numpotencia--
-    console.log(numbase)
-}
+    
+}console.log(produto)
