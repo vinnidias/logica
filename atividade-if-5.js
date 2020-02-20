@@ -1,0 +1,5 @@
+var user = require("readline-sync")
+var num1 = user.questionInt("digite o primeiro numero: ")
+var num2 = user.questionInt("digite o segundo numero: ")
+var num3 = user.questionInt("digite o terceiro numero: ")
+if()
