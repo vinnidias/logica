@@ -15,5 +15,5 @@ function Tabuada(numN){
    for(i=1;i<=numN;i++){
     var resultado = i*numN
     console.log(resultado)
-   } return console.log(resultado)
+   } return 'fim'
 }console.log(Tabuada(numN))

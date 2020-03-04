@@ -1,0 +1,6 @@
+var fs = require('fs')
+var carroSerealizado = fs.readFileSync('carro.json')
+var carro = JSON.parse(carroSerealizado)
+console.log(carro.modelo)
+console.log(carro.marca)
+console.log(carro.cor)
