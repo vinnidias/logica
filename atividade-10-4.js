@@ -12,9 +12,11 @@ var listaCarros = []
 var caminhoDoArquivo = 'carros.json'
 var listaSerealizada = JSON.stringify(listaCarros)
 var perguntas = user.questionInt('quer adionar(1) ou exibir(2)?')
+var carro = new Object
 
 function adicionarCarro(carro){
-   for(perguntas=1){ 
+   if(perguntas==1){
+    for(;perguntas==1;){ 
     var carro = new Object();
 carro.cor = user.question("qual a cor do carro: ")
 carro.modelo = user.question("qual o modelo do carro: ")
@@ -25,7 +27,7 @@ var listaSerealizada = JSON.stringify(listaCarros)
 fs.writeFileSync(caminhoDoArquivo, listaSerealizada)
 console.log("carro adicionado")
 var perguntas = user.questionInt('quer adionar(1) ou exibir(2)?')
-}
+}}
 else {var listaCarros = JSON.parse(listaSerealizada)
  console.log (listaCarros)
  return 'essa é a sua coleçao'
