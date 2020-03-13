@@ -1,3 +1,6 @@
+//Faça um algoritmo que diga qual é o carro menos potente da lista cars.json. 
+//Utilize o campo Horsepower para descobrir qual é o menos potente
+
 var fs = require('fs')
 var json = fs.readFileSync("C:\\projetos neura\\logica\\cars.json")
 var carros = JSON.parse(json)
