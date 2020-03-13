@@ -32,7 +32,7 @@ var max = Hps.reduce(function(a, b) {
 
 var carroMaiorHp = carros.map(carro => {
     var i=0
-    if (carro.Horsepower === 230) {
+    if (carro.Horsepower === max) {
         console.log(carro)
     console.log("esse é o carro mais potente")
     }})
