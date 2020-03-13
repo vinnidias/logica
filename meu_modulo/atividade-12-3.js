@@ -5,14 +5,16 @@
 //Após isso no arquivo da atividade importe o módulo criado e solicite ao usuário 3 números, 
 //utilize o módulo criado para calcular a média e no final imprima o resultado para o usuário.
 
-var media = require('median')
-var lista = []
-var valorDaMedia = media(lista)
 var user = require('readline-sync')
+var lista = []
+var modulo = require('./calcula-media.js')
 
-for(i=0;i<3;i++) {
-    var addLista = user.questionInt('digite um numero: ')
- lista.push(addLista)
- console.log(lista)
-}console.log(`a media dos numeros adicionados é ${valorDaMedia}`)
+console.log(modulo)
+for (i=0;i<3;i++) {
+    var num = user.questionInt('digite o numero para a lista: ')
+    lista.push(num)
+    console.log('proximo numero ')
+} 
+console.log(lista)
 
+console.log(`a media dos seus numeros é ${modulo.calculaMedia(lista)}`)
