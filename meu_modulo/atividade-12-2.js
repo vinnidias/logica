@@ -11,6 +11,7 @@
 
 var user = require('readline-sync')
 var ListasDeAlunos = []
+var sala = 3
 class Aluno {
     constructor(nome, idade){
         this.nome = nome
@@ -18,7 +19,7 @@ class Aluno {
     }
 }
 
-for (i=0; i<3; i++){
+for (i=0; i<sala; i++){
     var nome = user.question('digite o nome do aluno: ')
     var idade = user.questionInt('digite a idade do aluno: ')
     var AlunosADD = new Aluno(nome, idade)

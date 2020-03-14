@@ -8,9 +8,9 @@
 var user = require('readline-sync')
 var lista = []
 var modulo = require('./calcula-media.js')
-
+var itensLista = 3
 console.log(modulo)
-for (i=0;i<3;i++) {
+for (i=0;i<itensLista;i++) {
     var num = user.questionInt('digite o numero para a lista: ')
     lista.push(num)
     console.log('proximo numero ')
